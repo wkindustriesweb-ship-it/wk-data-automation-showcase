@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="#223148" stroke-width=".6" opacity=".35"/></pattern><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8Z" fill="#7390AC"/></marker></defs>
+<rect width="1600" height="900" fill="#0F172A"/><rect width="1600" height="900" fill="url(#grid)"/>
+<g font-family="DejaVu Sans,Arial,sans-serif"><text x="84" y="72" fill="#10B981" font-size="11" font-weight="700" letter-spacing="1.4">WK DIGITAL OPERATIONS</text>
+<text x="84" y="130" fill="#E5EDF8" font-size="29" font-weight="700">Automated Data Extraction &amp; ETL Pipeline</text>
+<text x="84" y="167" fill="#9FB0C6" font-size="14">A controlled workflow from permitted public sources to audited, client-ready outputs</text>
+<path d="M84 204H1516" stroke="#2A3A51"/>
+<rect x="89" y="256" width="322" height="224" rx="20" fill="#09111F" opacity=".62"/>
+<rect x="84" y="250" width="322" height="224" rx="20" fill="#16243A" stroke="#263953" stroke-width="1.2"/>
+<rect x="85" y="250" width="320" height="7" rx="4" fill="#38BDF8"/>
+<text x="108" y="284" fill="#38BDF8" font-size="12" font-weight="700">01</text>
+<text x="156" y="284" fill="#9FB0C6" font-size="10" font-weight="700">EXTRACT</text>
+<text x="108" y="337" fill="#E5EDF8" font-size="17" font-weight="700">Multi-Source</text>
+<text x="108" y="359" fill="#E5EDF8" font-size="17" font-weight="700">Extraction</text>
+<circle cx="113" cy="400" r="3" fill="#38BDF8"/>
+<text x="128" y="404" fill="#9FB0C6" font-size="10.2">Permitted public sources</text>
+<circle cx="113" cy="423" r="3" fill="#38BDF8"/>
+<text x="128" y="427" fill="#9FB0C6" font-size="10.2">Python · Playwright · APIs</text>
+<circle cx="113" cy="446" r="3" fill="#38BDF8"/>
+<text x="128" y="450" fill="#9FB0C6" font-size="10.2">Source and access checks</text>
+<text x="108" y="465" fill="#38BDF8" font-size="8.1" font-weight="700" letter-spacing=".6">INPUT CONTROL</text>
+<line x1="416" y1="362" x2="441" y2="362" stroke="#7390AC" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="459" y="256" width="322" height="224" rx="20" fill="#09111F" opacity=".62"/>
+<rect x="454" y="250" width="322" height="224" rx="20" fill="#16243A" stroke="#263953" stroke-width="1.2"/>
+<rect x="455" y="250" width="320" height="7" rx="4" fill="#10B981"/>
+<text x="478" y="284" fill="#10B981" font-size="12" font-weight="700">02</text>
+<text x="526" y="284" fill="#9FB0C6" font-size="10" font-weight="700">TRANSFORM</text>
+<text x="478" y="337" fill="#E5EDF8" font-size="17" font-weight="700">Automated Cleaning</text>
+<text x="478" y="359" fill="#E5EDF8" font-size="17" font-weight="700">&amp; Deduplication</text>
+<circle cx="483" cy="400" r="3" fill="#10B981"/>
+<text x="498" y="404" fill="#9FB0C6" font-size="10.2">Pandas normalization</text>
+<circle cx="483" cy="423" r="3" fill="#10B981"/>
+<text x="498" y="427" fill="#9FB0C6" font-size="10.2">Regex format validation</text>
+<circle cx="483" cy="446" r="3" fill="#10B981"/>
+<text x="498" y="450" fill="#9FB0C6" font-size="10.2">Key-based deduplication</text>
+<text x="478" y="465" fill="#10B981" font-size="8.1" font-weight="700" letter-spacing=".6">REPEATABLE ETL</text>
+<line x1="786" y1="362" x2="811" y2="362" stroke="#7390AC" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="829" y="256" width="322" height="224" rx="20" fill="#09111F" opacity=".62"/>
+<rect x="824" y="250" width="322" height="224" rx="20" fill="#16243A" stroke="#263953" stroke-width="1.2"/>
+<rect x="825" y="250" width="320" height="7" rx="4" fill="#38BDF8"/>
+<text x="848" y="284" fill="#38BDF8" font-size="12" font-weight="700">03</text>
+<text x="896" y="284" fill="#9FB0C6" font-size="10" font-weight="700">VALIDATE</text>
+<text x="848" y="337" fill="#E5EDF8" font-size="17" font-weight="700">Quality Assurance</text>
+<text x="848" y="359" fill="#E5EDF8" font-size="17" font-weight="700">&amp; Enrichment</text>
+<circle cx="853" cy="400" r="3" fill="#38BDF8"/>
+<text x="868" y="404" fill="#9FB0C6" font-size="10.2">Schema and field checks</text>
+<circle cx="853" cy="423" r="3" fill="#38BDF8"/>
+<text x="868" y="427" fill="#9FB0C6" font-size="10.2">Correction-count audit</text>
+<circle cx="853" cy="446" r="3" fill="#38BDF8"/>
+<text x="868" y="450" fill="#9FB0C6" font-size="10.2">Exceptions surfaced</text>
+<text x="848" y="465" fill="#38BDF8" font-size="8.1" font-weight="700" letter-spacing=".6">AUDIT TRAIL</text>
+<line x1="1156" y1="362" x2="1181" y2="362" stroke="#7390AC" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="1199" y="256" width="322" height="224" rx="20" fill="#09111F" opacity=".62"/>
+<rect x="1194" y="250" width="322" height="224" rx="20" fill="#16243A" stroke="#263953" stroke-width="1.2"/>
+<rect x="1195" y="250" width="320" height="7" rx="4" fill="#10B981"/>
+<text x="1218" y="284" fill="#10B981" font-size="12" font-weight="700">04</text>
+<text x="1266" y="284" fill="#9FB0C6" font-size="10" font-weight="700">DELIVER</text>
+<text x="1218" y="337" fill="#E5EDF8" font-size="17" font-weight="700">Multi-Format</text>
+<text x="1218" y="359" fill="#E5EDF8" font-size="17" font-weight="700">Client Delivery</text>
+<circle cx="1223" cy="400" r="3" fill="#10B981"/>
+<text x="1238" y="404" fill="#9FB0C6" font-size="10.2">Excel · CSV · JSON</text>
+<circle cx="1223" cy="423" r="3" fill="#10B981"/>
+<text x="1238" y="427" fill="#9FB0C6" font-size="10.2">Interactive dashboard</text>
+<circle cx="1223" cy="446" r="3" fill="#10B981"/>
+<text x="1238" y="450" fill="#9FB0C6" font-size="10.2">Clear handoff notes</text>
+<text x="1218" y="465" fill="#10B981" font-size="8.1" font-weight="700" letter-spacing=".6">READY TO REVIEW</text>
+<text x="84" y="538" fill="#38BDF8" font-size="9" font-weight="700" letter-spacing="1">CONTROL PLANE</text>
+<path d="M84 558H1516" stroke="#2A3A51"/>
+<rect x="84" y="591" width="247" height="43" rx="12" fill="#111E31" stroke="#30435C"/>
+<text x="100" y="617" fill="#E5EDF8" font-size="10">Field-level audit</text>
+<circle cx="314" cy="612" r="4" fill="#10B981"/>
+<rect x="350" y="591" width="242" height="43" rx="12" fill="#111E31" stroke="#30435C"/>
+<text x="366" y="617" fill="#E5EDF8" font-size="10">Deterministic reruns</text>
+<circle cx="575" cy="612" r="4" fill="#10B981"/>
+<rect x="612" y="591" width="310" height="43" rx="12" fill="#111E31" stroke="#30435C"/>
+<text x="628" y="617" fill="#E5EDF8" font-size="10">Human review where needed</text>
+<circle cx="905" cy="612" r="4" fill="#10B981"/>
+<rect x="938" y="591" width="332" height="43" rx="12" fill="#111E31" stroke="#30435C"/>
+<text x="954" y="617" fill="#E5EDF8" font-size="10">Export + dashboard delivery</text>
+<circle cx="1253" cy="612" r="4" fill="#10B981"/>
+<text x="84" y="695" fill="#9FB0C6" font-size="13">Designed to make each transformation visible, reproducible, and reviewable.</text>
+<text x="84" y="792" fill="#10B981" font-size="9" font-weight="700" letter-spacing="1">SYNTHETIC SHOWCASE</text>
+<text x="290" y="792" fill="#9FB0C6" font-size="10.5">This diagram illustrates a workflow; the accompanying sample records and metrics are synthetic, not production results.</text>
+<text x="1516" y="846" text-anchor="end" fill="#73869D" font-size="8.2">WK DIGITAL OPERATIONS  /  COORDINATED BY JONATAN LUNA</text></g></svg>

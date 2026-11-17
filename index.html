@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="WK Digital Operations | B2B Data Extraction, Cleaning &amp; Automation Showcase — synthetic sample.">
+  <title>WK Digital Operations | B2B Data Extraction, Cleaning &amp; Automation Showcase</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='14' fill='%23121f33'/%3E%3Cpath d='M12 14h6l4 17 5-12h5l4 12 4-17h6l-7 23h-6l-5-12-5 12h-6z' fill='%2338bdf8'/%3E%3C/svg%3E">
+  <!-- Tailwind CDN retained as a lightweight utility option; the page's visual system is authored locally for reliable offline rendering. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1220;--panel:#111c2d;--panel2:#142237;--line:#25374f;--muted:#95a8bf;--text:#e8f0f8;--blue:#38bdf8;--green:#10b981;--amber:#fbbf24;--red:#fb7185;--shadow:0 18px 44px rgba(0,0,0,.2)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% -14%,rgba(56,189,248,.13),transparent 34rem),radial-gradient(ellipse at -8% 20%,rgba(16,185,129,.08),transparent 30rem),var(--bg);color:var(--text);font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}button,input,select{font:inherit}button,select{cursor:pointer}a{color:inherit;text-decoration:none}.shell{width:min(1420px,calc(100% - 48px));margin:0 auto}.topbar{height:76px;border-bottom:1px solid rgba(149,168,191,.13);display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,#16324a,#10243a);display:grid;place-items:center;border:1px solid #2e5874;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}.brand-mark svg{width:24px;height:24px}.brand-name{font-size:13px;font-weight:750;letter-spacing:.045em}.brand-sub{font-size:11px;color:var(--muted);margin-top:1px}.top-right{display:flex;align-items:center;gap:10px}.pill{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:#c7d5e5;font-size:11px;letter-spacing:.02em;background:rgba(17,28,45,.68)}.pill-dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 10px rgba(16,185,129,.6)}.hero{padding:48px 0 24px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:30px}.eyebrow{font-size:10px;font-weight:750;letter-spacing:.14em;text-transform:uppercase;color:#74d8ff;display:flex;align-items:center;gap:9px}.eyebrow:before{content:"";display:block;width:19px;height:1px;background:var(--blue)}h1{font-size:clamp(29px,3.2vw,43px);line-height:1.1;letter-spacing:-.035em;margin:13px 0 12px;max-width:800px}.hero-copy{font-size:14px;color:#9eb0c5;max-width:760px;line-height:1.75;margin:0}.hero-stamp{width:212px;border:1px solid #29415c;border-radius:16px;background:linear-gradient(145deg,rgba(22,39,60,.92),rgba(15,25,40,.8));padding:16px 17px;box-shadow:var(--shadow)}.stamp-label{font-size:9px;letter-spacing:.13em;color:#89a0b8;text-transform:uppercase}.stamp-value{font-size:14px;font-weight:700;margin-top:6px}.stamp-sub{font-size:11px;color:var(--muted);margin-top:5px}.notice{display:flex;align-items:flex-start;gap:11px;padding:13px 15px;background:rgba(80,53,14,.18);border:1px solid rgba(251,191,36,.28);border-radius:11px;color:#e8d7ad;font-size:12px;margin:4px 0 22px}.notice svg{flex:0 0 16px;margin-top:1px;color:var(--amber)}.notice strong{color:#f5e4b7}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:0 0 24px}.kpi{background:linear-gradient(145deg,rgba(20,34,55,.92),rgba(16,27,44,.93));border:1px solid rgba(73,97,128,.32);border-radius:15px;padding:17px 18px;min-height:110px;box-shadow:0 10px 28px rgba(0,0,0,.1)}.kpi-top{display:flex;align-items:center;justify-content:space-between;color:#9bacc1;font-size:11px}.kpi-icon{width:28px;height:28px;border:1px solid #2a4961;border-radius:9px;background:#102439;display:grid;place-items:center;color:var(--blue)}.kpi-icon.green{color:var(--green);border-color:#245548;background:#0f2a29}.kpi-icon svg{width:15px;height:15px}.kpi-value{font-size:27px;line-height:1.1;letter-spacing:-.03em;font-weight:740;margin-top:10px}.kpi-foot{font-size:10px;color:#7489a2;margin-top:5px}.section-nav{display:flex;align-items:center;gap:6px;border-bottom:1px solid rgba(149,168,191,.16);margin-bottom:19px;padding-bottom:10px}.section-nav a{font-size:11px;color:#93a8bf;padding:7px 11px;border-radius:8px}.section-nav a.active,.section-nav a:hover{color:#eaf6ff;background:rgba(56,189,248,.1)}.section-nav .nav-spacer{flex:1}.section-nav .updated{font-size:10px;color:#71869d;padding-right:2px}.layout{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(290px,.78fr);gap:17px;align-items:start}.panel{background:linear-gradient(160deg,rgba(17,28,45,.97),rgba(14,24,39,.97));border:1px solid rgba(73,97,128,.32);border-radius:15px;box-shadow:var(--shadow)}.panel-head{padding:18px 19px 14px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.panel-title{font-size:14px;font-weight:700;letter-spacing:-.01em}.panel-desc{font-size:11px;color:var(--muted);margin-top:4px}.small-tag{border:1px solid #2b435c;border-radius:7px;background:#14253a;color:#a9c5db;padding:4px 8px;font-size:9px;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}.filters{display:grid;grid-template-columns:minmax(180px,1fr) 160px 176px;gap:9px;padding:0 19px 15px}.field{position:relative}.field-icon{position:absolute;width:15px;height:15px;left:11px;top:50%;transform:translateY(-50%);color:#7188a2;pointer-events:none}.control{width:100%;height:37px;border:1px solid #2a3d55;border-radius:8px;background:#0e1929;color:#dce8f5;outline:none;padding:0 11px;font-size:11px}.control.search{padding-left:34px}.control:focus{border-color:#38bdf8;box-shadow:0 0 0 3px rgba(56,189,248,.1)}.control option{background:#0e1929}.table-wrap{overflow:auto;border-top:1px solid rgba(149,168,191,.12);border-bottom:1px solid rgba(149,168,191,.12)}table{width:100%;border-collapse:collapse;min-width:650px;text-align:left}thead th{color:#7f95ad;text-transform:uppercase;letter-spacing:.08em;font-size:9px;font-weight:700;padding:11px 14px;background:rgba(12,20,33,.56);white-space:nowrap}tbody td{padding:12px 14px;border-top:1px solid rgba(149,168,191,.09);font-size:11px;color:#c3d0de;vertical-align:middle}tbody tr:hover{background:rgba(56,189,248,.035)}.company{display:flex;align-items:center;gap:10px;min-width:190px}.company-avatar{width:29px;height:29px;border-radius:9px;background:#162b43;border:1px solid #2e506d;display:grid;place-items:center;font-size:9px;font-weight:750;color:#78d5ff;flex:0 0 auto}.company-name{font-size:11px;font-weight:650;color:#e3edf6;max-width:210px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.company-id{font-size:9px;color:#70859c;margin-top:2px}.industry-chip{display:inline-flex;padding:4px 7px;border-radius:6px;border:1px solid #2b435a;background:#13263a;color:#a9d9f0;font-size:9px;white-space:nowrap}.city-cell{color:#aebfd1;white-space:nowrap}.score{font-variant-numeric:tabular-nums;color:#76dfb9;font-weight:650}.row-more{color:#8399b0;font-size:10px}.table-footer{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;color:#7f94ab;font-size:10px}.pager{display:flex;gap:6px}.pager button{height:27px;min-width:28px;border:1px solid #2a3d55;background:#111f32;color:#c5d2e1;border-radius:7px;font-size:10px}.pager button:disabled{opacity:.35;cursor:default}.pager .page-indicator{padding:0 6px;display:grid;place-items:center}.sidebar{display:grid;gap:16px}.side-panel{padding:17px 17px 16px}.side-title{font-size:12px;font-weight:700}.side-intro{color:var(--muted);font-size:10px;line-height:1.55;margin-top:5px}.audit-list{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:10px}.audit-list li{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:#9aadc2}.audit-list strong{color:#dbe8f5;font-size:10px;font-weight:650;text-align:right}.audit-rule{height:1px;background:rgba(149,168,191,.13);margin:14px 0 12px}.quality-bar-label{display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#9aadc2}.quality-bar-label b{color:#8ce5c2}.quality-bar{height:6px;background:#203147;border-radius:99px;margin-top:8px;overflow:hidden}.quality-bar span{display:block;width:0;height:100%;background:linear-gradient(90deg,#10b981,#6ee7b7);border-radius:99px}.downloads{display:grid;gap:8px;margin-top:14px}.download-btn{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:10px 11px;border:1px solid #2a4059;border-radius:9px;background:#142238;color:#d5e2f0;font-size:10px;text-align:left;transition:.15s ease}.download-btn:hover{background:#192d45;border-color:#3d617c;transform:translateY(-1px)}.download-left{display:flex;align-items:center;gap:9px}.file-icon{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;background:#122e2b;color:#70d8ad;border:1px solid #255349}.file-icon.blue{background:#13293c;color:#7dd3fc;border-color:#2c526b}.file-icon svg{width:14px;height:14px}.download-name{font-weight:650}.download-meta{font-size:9px;color:#8095ac;margin-top:2px}.download-arrow{color:#6d849c;font-size:13px}.section-block{margin-top:18px}.estimator{margin-top:17px}.estimator-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 19px 17px}.form-group label{display:block;font-size:10px;color:#9aadc2;margin:0 0 6px}.estimator .control{height:39px}.estimate-result{margin:0 19px 18px;padding:15px 15px 14px;border:1px solid rgba(56,189,248,.25);border-radius:11px;background:linear-gradient(125deg,rgba(18,48,70,.53),rgba(16,36,52,.6));display:grid;grid-template-columns:1fr auto;gap:9px;align-items:center}.estimate-kicker{color:#8edbfa;font-size:9px;text-transform:uppercase;letter-spacing:.1em;font-weight:700}.estimate-value{font-size:17px;font-weight:730;letter-spacing:-.02em;margin-top:4px}.estimate-disclaimer{font-size:9px;color:#91a8bd;margin-top:5px;line-height:1.45;max-width:500px}.estimate-icon{width:38px;height:38px;border-radius:11px;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.28);display:grid;place-items:center;color:#7dd3fc}.estimate-icon svg{width:19px;height:19px}.deliverables{padding:0 19px 18px}.deliverables-label{font-size:10px;color:#97aac0;margin-bottom:8px}.deliverable-chips{display:flex;gap:7px;flex-wrap:wrap}.deliverable-chip{border:1px solid #2a4057;border-radius:999px;background:#122137;color:#b9cce0;padding:5px 9px;font-size:9px}.bottom-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:17px;margin-top:17px}.workflow-card{padding:18px 19px}.workflow-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:16px}.workflow-step{border:1px solid rgba(73,97,128,.28);background:#101c2d;border-radius:10px;padding:11px 10px;min-height:85px}.step-no{font-size:9px;color:#4ec7f7;font-weight:750;letter-spacing:.08em}.step-title{font-size:10px;color:#d7e3ef;font-weight:650;margin-top:5px}.step-text{font-size:9px;color:#8399b0;margin-top:3px;line-height:1.45}.diagram-thumb{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border:1px solid #2a3e57;border-radius:10px;margin-top:14px}.diagram-caption{display:flex;justify-content:space-between;gap:8px;color:#8297ad;font-size:9px;margin-top:8px}.footer{display:flex;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid rgba(149,168,191,.13);margin-top:25px;padding:18px 0 26px;color:#72869d;font-size:10px}.footer strong{font-weight:650;color:#a7b9cc}.footer-right{text-align:right}.loading{color:#8297ad}.error-state{color:#fda4af;padding:12px 18px;font-size:11px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:1060px){.layout{grid-template-columns:minmax(0,1.45fr) minmax(270px,.8fr)}.filters{grid-template-columns:minmax(155px,1fr) 140px 150px}.workflow-steps{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:820px){.shell{width:min(100% - 32px,720px)}.hero{grid-template-columns:1fr;padding-top:36px}.hero-stamp{display:none}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.layout{grid-template-columns:1fr}.sidebar{grid-template-columns:1fr 1fr}.bottom-grid{grid-template-columns:1fr}.section-nav .updated{display:none}}
+    @media(max-width:560px){.shell{width:calc(100% - 24px)}.topbar{height:66px}.brand-sub{display:none}.top-right .pill:first-child{display:none}.hero{padding:29px 0 18px}h1{font-size:31px}.hero-copy{font-size:13px}.notice{font-size:10px;padding:11px}.kpis{gap:9px}.kpi{min-height:100px;padding:13px}.kpi-value{font-size:23px}.kpi-foot{font-size:9px}.section-nav{overflow:auto;white-space:nowrap}.section-nav a{padding:6px 8px}.panel-head{padding:15px 14px 12px}.filters{padding:0 14px 13px;grid-template-columns:1fr 1fr}.field.search-field{grid-column:1/-1;grid-row:1}.filters select{width:100%}.sidebar{grid-template-columns:1fr}.estimator-grid{padding-left:14px;padding-right:14px}.estimate-result{margin-left:14px;margin-right:14px}.deliverables{padding-left:14px;padding-right:14px}.workflow-card{padding:15px}.workflow-steps{gap:7px}.footer{align-items:flex-start;flex-direction:column}.footer-right{text-align:left}.table-footer{padding:11px 13px}.bottom-grid{margin-top:14px}}
+  @media(max-width:820px){.layout{grid-template-columns:minmax(0,1fr)}.layout>*{min-width:0}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="#top" aria-label="WK Digital Operations home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4.5 8.2h4.6l3 14.8 4-10.1h3.8l4 10.1 3-14.8h4.6l-5.1 19.1h-4.3l-4.1-10.1-4.1 10.1H9.6L4.5 8.2Z" fill="#38BDF8"/><path d="M23.4 5.8h4.2" stroke="#10B981" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+        <span><span class="brand-name">WK DIGITAL OPERATIONS</span><span class="brand-sub">Data systems · automation · reporting</span></span>
+      </a>
+      <div class="top-right"><span class="pill"><span class="pill-dot"></span> Showcase environment</span><span class="pill">EN&nbsp; / &nbsp;North America</span></div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <div class="eyebrow">Data operations showcase <span class="pill" style="padding:4px 8px;font-size:9px;color:#ffd789;border-color:rgba(251,191,36,.25);background:rgba(74,49,11,.2)">Synthetic sample</span></div>
+          <h1 id="page-title">B2B data, cleaned and ready to work.</h1>
+          <p class="hero-copy">WK Digital Operations | B2B Data Extraction, Cleaning &amp; Automation Showcase. A transparent example of extracting permitted public data, normalizing messy fields, auditing every correction, and delivering useful exports with a searchable dashboard.</p>
+        </div>
+        <aside class="hero-stamp" aria-label="Project attribution">
+          <div class="stamp-label">Project workspace</div>
+          <div class="stamp-value">WK Digital Operations</div>
+          <div class="stamp-sub">Coordinated by Jonatan Luna</div>
+        </aside>
+      </section>
+
+      <div class="notice" role="note">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.2 18 16H2L10 2.2Z" stroke="currentColor" stroke-width="1.5"/><path d="M10 7v4.5M10 14.1v.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <div><strong>Sample data, not real leads.</strong> All 150 company records, contact placeholders, scores, and audit figures on this page are synthetic demonstrations. They do not represent verified companies, client metrics, or production results.</div>
+      </div>
+
+      <section class="kpis" aria-label="Pipeline metrics">
+        <article class="kpi"><div class="kpi-top"><span>Sample records</span><span class="kpi-icon"><svg viewBox="0 0 16 16" fill="none"><rect x="2.2" y="2.4" width="11.6" height="11" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M5 5.5h6M5 8h6M5 10.5h3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span></div><div class="kpi-value loading" id="kpi-records">—</div><div class="kpi-foot">Fictional B2B company records</div></article>
+        <article class="kpi"><div class="kpi-top"><span>Mean sample QA score</span><span class="kpi-icon green"><svg viewBox="0 0 16 16" fill="none"><path d="m3 8.4 3.1 3.1L13 4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="6.3" stroke="currentColor" stroke-width="1.1"/></svg></span></div><div class="kpi-value loading" id="kpi-quality">—</div><div class="kpi-foot">Transparent demo heuristic, not accuracy</div></article>
+        <article class="kpi"><div class="kpi-top"><span>Duplicate rows removed</span><span class="kpi-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M5.2 5.2h7v8h-7zM3.8 10.8H3a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v.8" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></span></div><div class="kpi-value loading" id="kpi-duplicates">—</div><div class="kpi-foot">Calculated from the raw sample file</div></article>
+        <article class="kpi"><div class="kpi-top"><span>Sample rows passing checks</span><span class="kpi-icon green"><svg viewBox="0 0 16 16" fill="none"><path d="M8 1.8 13 3.7v3.7c0 3.2-2 5.5-5 6.9-3-1.4-5-3.7-5-6.9V3.7l5-1.9Z" stroke="currentColor" stroke-width="1.2"/><path d="m5.4 7.9 1.7 1.7 3.5-3.8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="kpi-value loading" id="kpi-valid">—</div><div class="kpi-foot">Local schema and format checks only</div></article>
+      </section>
+
+      <nav class="section-nav" aria-label="Dashboard sections"><a class="active" href="#explorer">Data explorer</a><a href="#downloads">Downloads & audit</a><a href="#estimator">Scope estimator</a><a href="#workflow">ETL workflow</a><span class="nav-spacer"></span><span class="updated" id="dataset-status">Loading sample dataset…</span></nav>
+
+      <div class="layout">
+        <section class="panel" id="explorer" aria-labelledby="explorer-heading">
+          <div class="panel-head"><div><div class="panel-title" id="explorer-heading">Synthetic company explorer</div><div class="panel-desc">Search names and fields; filter the fictional sample by industry or location.</div></div><span class="small-tag">Live filters</span></div>
+          <div class="filters">
+            <label class="field search-field"><span class="sr-only">Search sample records</span><svg class="field-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.4" stroke="currentColor" stroke-width="1.4"/><path d="m10.3 10.3 3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg><input class="control search" type="search" id="search" placeholder="Search company, stack, email…" autocomplete="off"></label>
+            <label><span class="sr-only">Filter by industry</span><select class="control" id="industry-filter"><option value="">All industries</option></select></label>
+            <label><span class="sr-only">Filter by city</span><select class="control" id="city-filter"><option value="">All locations</option></select></label>
+          </div>
+          <div class="table-wrap"><table aria-label="Synthetic company sample"><thead><tr><th>Company</th><th>Industry</th><th>Location</th><th>QA score</th><th>Stack</th></tr></thead><tbody id="records-body"><tr><td colspan="5" class="loading">Loading data…</td></tr></tbody></table><div id="load-error" class="error-state" hidden></div></div>
+          <div class="table-footer"><span id="record-count">Preparing sample…</span><div class="pager"><button type="button" id="prev-page" aria-label="Previous page" disabled>‹</button><span class="page-indicator" id="page-indicator">1 / 1</span><button type="button" id="next-page" aria-label="Next page" disabled>›</button></div></div>
+        </section>
+
+        <aside class="sidebar">
+          <section class="panel side-panel" aria-labelledby="audit-heading">
+            <div class="side-title" id="audit-heading">Pipeline audit snapshot</div><div class="side-intro">Counts below come directly from the local Pandas run; no sample metrics are hand-entered.</div>
+            <ul class="audit-list">
+              <li><span>Raw rows</span><strong id="audit-raw">—</strong></li>
+              <li><span>Normalized field values</span><strong id="audit-repaired">—</strong></li>
+              <li><span>Broken URLs repaired</span><strong id="audit-urls">—</strong></li>
+              <li><span>Phone formats normalized</span><strong id="audit-phones">—</strong></li>
+              <li><span>Final schema completeness</span><strong id="audit-complete">—</strong></li>
+            </ul>
+            <div class="audit-rule"></div>
+            <div class="quality-bar-label"><span>Heuristic score range</span><b id="score-range">—</b></div><div class="quality-bar" aria-label="Mean demo score"><span id="quality-fill"></span></div>
+          </section>
+
+          <section class="panel side-panel" id="downloads" aria-labelledby="downloads-heading">
+            <div class="side-title" id="downloads-heading">Sample downloads</div><div class="side-intro">Export the synthetic dataset and its correction log. Every file carries the sample-only label.</div>
+            <div class="downloads">
+              <a class="download-btn" href="./deliverables/WK_B2B_Cleaned_Leads_Sample.csv" download><span class="download-left"><span class="file-icon green"><svg viewBox="0 0 16 16" fill="none"><path d="M8 2v8m0 0 3-3m-3 3L5 7M2.5 11.5v2h11v-2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><span class="download-name">Clean sample · CSV</span><span class="download-meta">Portable tabular export</span></span></span><span class="download-arrow">↓</span></a>
+              <a class="download-btn" href="./deliverables/WK_B2B_Cleaned_Leads_Sample.xlsx" download><span class="download-left"><span class="file-icon"><svg viewBox="0 0 16 16" fill="none"><path d="M3 2.2h6.2l3.8 3.7v8H3z" stroke="currentColor" stroke-width="1.2"/><path d="M9 2.5v3.8h3.8M5 8h6M5 10h6M5 12h4" stroke="currentColor" stroke-width="1.1"/></svg></span><span><span class="download-name">Clean sample · Excel</span><span class="download-meta">Includes executive summary tab</span></span></span><span class="download-arrow">↓</span></a>
+              <a class="download-btn" href="./deliverables/cleaning_audit_report.json" download><span class="download-left"><span class="file-icon blue"><svg viewBox="0 0 16 16" fill="none"><path d="M5.4 3.1 2.5 8l2.9 4.9m5.2-9.8L13.5 8l-2.9 4.9M9.2 2.4 6.8 13.6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><span class="download-name">Cleaning audit · JSON</span><span class="download-meta">Raw counts, fixes & checks</span></span></span><span class="download-arrow">↓</span></a>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <section class="panel estimator" id="estimator" aria-labelledby="estimator-heading">
+        <div class="panel-head"><div><div class="panel-title" id="estimator-heading">Instant scope estimator</div><div class="panel-desc">An indicative planning range to start a conversation—not a delivery guarantee or quote.</div></div><span class="small-tag">Interactive scope</span></div>
+        <div class="estimator-grid">
+          <div class="form-group"><label for="task-type">Project type</label><select class="control" id="task-type"><option value="scraping">Web Scraping</option><option value="cleaning">Excel / CSV Cleaning</option><option value="automation">n8n / API Automation</option><option value="dashboard">Web Dashboard</option></select></div>
+          <div class="form-group"><label for="volume">Approximate record volume</label><select class="control" id="volume"><option value="500">500 records</option><option value="1000">1,000 records</option><option value="5000">5,000 records</option><option value="10000">10,000 records</option><option value="25000">25,000 records</option><option value="75000">50,000+ records</option></select></div>
+        </div>
+        <div class="estimate-result" aria-live="polite"><div><div class="estimate-kicker">Indicative planning range</div><div class="estimate-value" id="estimate-value">Select a scope</div><div class="estimate-disclaimer" id="estimate-note">Timing depends on source permissions, access, data condition, review cycles, and final scope. Confirm after discovery; no turnaround is guaranteed.</div></div><span class="estimate-icon"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7.2" stroke="currentColor" stroke-width="1.4"/><path d="M10 5.8V10l2.8 1.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        <div class="deliverables"><div class="deliverables-label">Typical handoff items for this scope</div><div class="deliverable-chips" id="deliverable-list"></div></div>
+      </section>
+
+      <div class="bottom-grid" id="workflow">
+        <section class="panel workflow-card" aria-labelledby="workflow-heading"><div class="panel-title" id="workflow-heading">A repeatable path from raw input to handoff</div><div class="panel-desc">Each stage creates reviewable artifacts—not unverifiable outcome claims.</div><div class="workflow-steps"><div class="workflow-step"><div class="step-no">01 / EXTRACT</div><div class="step-title">Source responsibly</div><div class="step-text">Confirm permitted access and field scope.</div></div><div class="workflow-step"><div class="step-no">02 / CLEAN</div><div class="step-title">Normalize the data</div><div class="step-text">Standardize formats and remove key duplicates.</div></div><div class="workflow-step"><div class="step-no">03 / VALIDATE</div><div class="step-title">Show the evidence</div><div class="step-text">Count fixes and run schema checks.</div></div><div class="workflow-step"><div class="step-no">04 / DELIVER</div><div class="step-title">Make it usable</div><div class="step-text">Hand off exports, notes, and a searchable view.</div></div></div></section>
+        <section class="panel workflow-card" aria-labelledby="diagram-heading"><div class="panel-title" id="diagram-heading">ETL architecture</div><div class="panel-desc">Original diagram generated for this showcase; no external imagery used.</div><img class="diagram-thumb" src="./assets/etl_architecture_diagram.svg" alt="Four-stage synthetic data ETL pipeline architecture diagram"><div class="diagram-caption"><span>1600 × 900 px · custom-rendered</span><span>WK Digital Operations</span></div></section>
+      </div>
+    </main>
+
+    <footer class="footer"><div><strong>WK Digital Operations</strong> <span>· Coordinated by Jonatan Luna</span><br><span>All records and metrics are synthetic showcase examples.</span></div><div class="footer-right">Built for review and adaptation<br>Cloudflare Pages project prepared; no deployment is live.</div></footer>
+  </div>
+  <script>
+    const PAGE_SIZE = 9;
+    const state = { rows: [], report: null, page: 1 };
+    const $ = (selector) => document.querySelector(selector);
+    const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+    const titleInitials = (name) => String(name).split(/\s+/).slice(0,2).map(part => part[0] || "").join("").toUpperCase();
+    const fmt = (value) => new Intl.NumberFormat("en-US").format(Number(value || 0));
+
+    function updateFilters() {
+      const industries = [...new Set(state.rows.map(row => row.Industry))].sort();
+      const cities = [...new Set(state.rows.map(row => row.City_State))].sort();
+      const industry = $("#industry-filter"), city = $("#city-filter");
+      industries.forEach(item => industry.add(new Option(item, item)));
+      cities.forEach(item => city.add(new Option(item, item)));
+    }
+
+    function filteredRows() {
+      const term = $("#search").value.trim().toLowerCase();
+      const industry = $("#industry-filter").value;
+      const city = $("#city-filter").value;
+      return state.rows.filter(row => {
+        if (industry && row.Industry !== industry) return false;
+        if (city && row.City_State !== city) return false;
+        return !term || Object.values(row).some(value => String(value).toLowerCase().includes(term));
+      });
+    }
+
+    function renderTable() {
+      const rows = filteredRows();
+      const pages = Math.max(1, Math.ceil(rows.length / PAGE_SIZE));
+      state.page = Math.min(state.page, pages);
+      const offset = (state.page - 1) * PAGE_SIZE;
+      const visible = rows.slice(offset, offset + PAGE_SIZE);
+      const body = $("#records-body");
+      if (!visible.length) {
+        body.innerHTML = '<tr><td colspan="5" class="loading">No sample records match these filters.</td></tr>';
+      } else {
+        body.innerHTML = visible.map(row => `<tr>
+          <td><div class="company"><span class="company-avatar">${escapeHtml(titleInitials(row.Company_Name))}</span><span><span class="company-name">${escapeHtml(row.Company_Name)}</span><span class="company-id">${escapeHtml(row.Company_ID)} · synthetic</span></span></div></td>
+          <td><span class="industry-chip">${escapeHtml(row.Industry)}</span></td>
+          <td class="city-cell">${escapeHtml(row.City_State)}</td>
+          <td class="score">${Number(row.Data_Quality_Score).toFixed(1)}%</td>
+          <td class="row-more">${escapeHtml(row.Tech_Stack_Detected)}</td>
+        </tr>`).join("");
+      }
+      $("#record-count").textContent = rows.length ? `Showing ${fmt(offset + 1)}–${fmt(Math.min(offset + PAGE_SIZE, rows.length))} of ${fmt(rows.length)} matching sample records` : "0 matching sample records";
+      $("#page-indicator").textContent = `${state.page} / ${pages}`;
+      $("#prev-page").disabled = state.page <= 1;
+      $("#next-page").disabled = state.page >= pages;
+    }
+
+    function fillMetrics() {
+      const report = state.report;
+      const q = report.quality_metrics;
+      const corrections = report.correction_counts;
+      const validation = report.validation;
+      $("#kpi-records").textContent = fmt(report.final_records);
+      $("#kpi-quality").textContent = `${Number(q.mean_score_pct).toFixed(1)}%`;
+      $("#kpi-duplicates").textContent = fmt(report.duplicate_rows_removed);
+      $("#kpi-valid").textContent = `${fmt(validation.valid_rows)} / ${fmt(report.final_records)}`;
+      ["#kpi-records", "#kpi-quality", "#kpi-duplicates", "#kpi-valid"].forEach(id => $(id).classList.remove("loading"));
+      $("#audit-raw").textContent = fmt(report.raw_rows);
+      $("#audit-repaired").textContent = fmt(corrections.field_values_normalized);
+      $("#audit-urls").textContent = fmt(corrections.website_urls_repaired);
+      $("#audit-phones").textContent = fmt(corrections.phones_normalized);
+      $("#audit-complete").textContent = `${Number(validation.schema_completeness_pct).toFixed(1)}%`;
+      $("#score-range").textContent = `${Number(q.minimum_score_pct).toFixed(1)}% – ${Number(q.maximum_score_pct).toFixed(1)}%`;
+      $("#quality-fill").style.width = `${Math.max(0, Math.min(100, Number(q.mean_score_pct)))}%`;
+      $("#dataset-status").textContent = `Audit generated from ${fmt(report.raw_rows)} synthetic raw rows`;
+    }
+
+    const scopes = {
+      scraping: { base:[2,4], deliverables:["Source & field notes","CSV / Excel export","QA summary"] },
+      cleaning: { base:[1,2], deliverables:["Cleaned CSV / Excel","Deduplication log","Schema notes"] },
+      automation: { base:[3,5], deliverables:["Workflow outline","Integration checks","Error handling notes"] },
+      dashboard: { base:[3,6], deliverables:["Responsive data view","Search & filters","Downloadable exports"] }
+    };
+    function updateEstimate() {
+      const type = $("#task-type").value;
+      const volume = Number($("#volume").value);
+      const extra = volume <= 1000 ? 0 : volume <= 5000 ? 1 : volume <= 10000 ? 2 : volume <= 25000 ? 3 : 4;
+      const [low, high] = scopes[type].base;
+      $("#estimate-value").textContent = `${low + extra}–${high + extra} working days · indicative`;
+      $("#deliverable-list").innerHTML = scopes[type].deliverables.map(item => `<span class="deliverable-chip">${escapeHtml(item)}</span>`).join("");
+    }
+
+    async function init() {
+      try {
+        const [dataResponse, auditResponse] = await Promise.all([
+          fetch("./deliverables/WK_B2B_Cleaned_Leads_Sample.json", {cache:"no-store"}),
+          fetch("./deliverables/cleaning_audit_report.json", {cache:"no-store"})
+        ]);
+        if (!dataResponse.ok || !auditResponse.ok) throw new Error("Could not load the local sample files.");
+        state.rows = await dataResponse.json();
+        state.report = await auditResponse.json();
+        fillMetrics();
+        updateFilters();
+        renderTable();
+      } catch (error) {
+        $("#load-error").hidden = false;
+        $("#load-error").textContent = "Sample data did not load. Serve this folder over HTTP and verify the deliverables/ files are present.";
+        $("#records-body").innerHTML = "";
+        $("#dataset-status").textContent = "Sample data unavailable";
+        console.error("Dashboard data load failed:", error);
+      }
+      updateEstimate();
+    }
+    ["#search", "#industry-filter", "#city-filter"].forEach(selector => $(selector).addEventListener("input", () => { state.page = 1; renderTable(); }));
+    $("#prev-page").addEventListener("click", () => { state.page--; renderTable(); });
+    $("#next-page").addEventListener("click", () => { state.page++; renderTable(); });
+    ["#task-type", "#volume"].forEach(selector => $(selector).addEventListener("change", updateEstimate));
+    init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "project": "WK Digital Operations — Synthetic B2B ETL Showcase",
+  "data_provenance": "All records and figures are synthetic demonstrations. No real company directory or personal contact data was used.",
+  "generated_at_utc": "2026-11-17T23:55:32+00:00",
+  "input_file": "data/raw_scrape_dump.csv",
+  "raw_rows": 162,
+  "rows_after_normalization_before_deduplication": 162,
+  "duplicate_rows_removed": 12,
+  "final_records": 150,
+  "correction_counts": {
+    "field_values_normalized": 96,
+    "whitespace_padded_cells_trimmed": 64,
+    "company_names_normalized": 21,
+    "company_ids_normalized": 12,
+    "city_values_normalized": 12,
+    "website_urls_repaired": 13,
+    "broken_or_noncanonical_urls_detected": 13,
+    "phones_normalized": 19,
+    "emails_normalized": 10,
+    "tech_stack_values_normalized": 9
+  },
+  "quality_metrics": {
+    "scoring_method": "Heuristic sample score = 100.0 minus 0.5 points per source field value normalized for the retained record, floored at 98.0; it is not an accuracy, verification, or production metric.",
+    "minimum_score_pct": 98.5,
+    "mean_score_pct": 99.76,
+    "maximum_score_pct": 100.0
+  },
+  "validation": {
+    "checks_per_record": 7,
+    "valid_rows": 150,
+    "invalid_rows": 0,
+    "schema_completeness_pct": 100.0,
+    "checks": {
+      "required_fields_present": 150,
+      "unique_company_ids": 1,
+      "valid_example_domain_websites": 150,
+      "valid_synthetic_example_emails": 150,
+      "valid_reserved_format_phones": 150,
+      "quality_scores_in_requested_range": 150,
+      "expected_provenance_label": 150
+    },
+    "check_definitions": [
+      "All required output fields are populated",
+      "Company_ID values are unique",
+      "Websites use canonical HTTPS on reserved .example domains",
+      "Public contact email placeholders use reserved .example domains",
+      "Phone placeholders use the reserved 555-0100..0199 pattern",
+      "Heuristic quality scores are within 98–100",
+      "Every record is labeled SYNTHETIC_SAMPLE"
+    ]
+  },
+  "limitations": [
+    "Synthetic examples only; no records represent real leads or verified companies.",
+    "The quality score is a transparent demo heuristic, not factual accuracy or production performance.",
+    "The .example hostnames and contact emails are reserved placeholders and are not contact channels."
+  ]
+}
