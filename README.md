@@ -15,7 +15,7 @@
 
 ![WK Digital Operations ETL architecture diagram](assets/etl_architecture_diagram.png)
 
-The dashboard preview below is a local browser rendering of this repository's `index.html`; it is not a live hosted site.
+Live dashboard: **https://wk-data-automation-showcase.pages.dev/**. The preview below is a browser rendering of the same static dashboard bundle.
 
 ![Dashboard preview — synthetic sample](assets/dashboard_preview.png)
 
@@ -98,7 +98,9 @@ The four dashboard KPIs and audit counts load from the generated JSON artifacts.
 
 ## Hosting status
 
-The dashboard source is ready in `index.html`, but **no hosted dashboard URL is available yet**. GitHub Pages is intentionally not enabled; [GitHub's terms](https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features) do not allow using Pages as free hosting to operate an online business or a site primarily directed at commercial transactions or commercial SaaS. A Cloudflare Pages Direct Upload project was prepared, but its asset-authorization request returned HTTP 403, so no deployment was created. This repository remains the source and downloadable-artifact location until deployment can be completed on a suitable host.
+The dashboard is published at **https://wk-data-automation-showcase.pages.dev/** through Cloudflare Pages Git integration with this repository's `main` branch. Cloudflare serves the prebuilt `site/` directory with framework preset **None** and no build command. After changing the dashboard or its download artifacts, run `python src/build_static_site.py`, commit the updated bundle, and push to `main`. Production deployments are enabled; preview-branch deployments and PR comments are disabled. No manual file upload is required.
+
+GitHub Pages remains intentionally disabled. The public GitHub repository is the source and downloadable-artifact location, not the site's web host. Live validation confirmed HTTP 200, computed KPIs, search, combined filters, the indicative estimator, all three download links, the 1600 × 900 diagram, and a 390 px responsive layout without horizontal overflow.
 
 ## Data handling and visual assets
 
